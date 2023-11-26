@@ -1,0 +1,22 @@
+{{#> layouts/page title="Sign in Page"}}
+    <link rel="stylesheet" href="/src/pages/sign-in/sign-in.scss"/>
+    <main class="sign-in-page">
+        <div class="container">
+            <form class="form">
+                <div class="form-wrapper">
+                    <h1 class="title">Вход</h1>
+                    <ul class="input-list">
+                        {{> shared/ui/input/input label="Логин" placeholder="введите логин" name="login" type="text"}}
+                        {{> shared/ui/input/input label="Пароль" placeholder="введите пароль" name="password" type="password"}}
+                    </ul>
+                </div>
+                <div class="button-wrapper">
+                    {{> shared/ui/button/button type="submit" text="Авторизоваться"}}
+                </div>
+            </form>
+            <div class="link-wrapper">
+                {{> shared/ui/link/link href="/src/pages/sign-up/sign-up.html" text="Нет аккаунта?"}}
+            </div>
+        </div>
+    </main>
+{{/ layouts/page}}

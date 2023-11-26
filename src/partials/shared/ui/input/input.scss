@@ -1,0 +1,23 @@
+input {
+  all: unset;
+}
+
+.wrapper-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #3369F3;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+  color: #999999;
+}
+
+.input {
+  padding-bottom: 7px;
+}
