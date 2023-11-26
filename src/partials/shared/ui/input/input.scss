@@ -6,7 +6,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid #3369F3;
+  border-bottom: 1px solid var(--button-primary-color);
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -15,7 +15,7 @@ input {
 
 .label {
   margin-bottom: 8px;
-  color: #999999;
+  color: var(--input-color);
 }
 
 .input {

@@ -23,13 +23,13 @@
   align-items: center;
   width: 130px;
   height: 130px;
-  background: rgba(239, 239, 239, 1);
+  background: var(--background-avatar-color);
   border-radius: 50%;
   margin: 0 auto;
   cursor: pointer;
 
   &:hover {
-    background: rgba(0, 0, 0, 1);
+    background: var(--background-avatar-color-hover);
   }
 }
 
