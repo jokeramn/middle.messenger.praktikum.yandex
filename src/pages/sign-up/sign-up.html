@@ -1,0 +1,27 @@
+{{#> layouts/page title="Sign up Page"}}
+    <link rel="stylesheet" href="/src/pages/sign-up/sign-up.scss"/>
+    <main class="sign-up-page">
+        <div class="container">
+            <form class="form">
+                <div class="form-wrapper">
+                    <h1 class="title">Регистрация</h1>
+                    <ul class="input-list">
+                        {{> shared/ui/input/input label="Почта" placeholder="введите почту" name="email" type="email"}}
+                        {{> shared/ui/input/input label="Логин" placeholder="введите логин" name="login" type="text"}}
+                        {{> shared/ui/input/input label="Имя" placeholder="введите имя" name="first_name" type="text"}}
+                        {{> shared/ui/input/input label="Фамилия" placeholder="введите фамилию" name="second_name" type="text"}}
+                        {{> shared/ui/input/input label="Телефон" placeholder="введите телефон" name="phone" type="tel"}}
+                        {{> shared/ui/input/input label="Пароль" placeholder="введите пароль" name="password" type="password"}}
+                        {{> shared/ui/input/input label="Пароль (еще раз)" placeholder="введите пароль еще раз" name="password" type="password"}}
+                    </ul>
+                </div>
+                <div class="button-wrapper">
+                    {{> shared/ui/button/button type="submit" text="Зарегистрироваться"}}
+                </div>
+            </form>
+            <div class="link-wrapper">
+                {{> shared/ui/link/link href="#" text="Нет аккаунта?"}}
+            </div>
+        </div>
+    </main>
+{{/ layouts/page}}

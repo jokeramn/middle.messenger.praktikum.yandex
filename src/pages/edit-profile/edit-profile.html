@@ -1,0 +1,27 @@
+{{#> layouts/page title="Edit profile"}}
+    <link rel="stylesheet" href="/src/pages/edit-profile/edit-profile.scss"/>
+    <main class="edit-profile-page">
+        <div class="container">
+            <div class="avatar-block">
+                <div class="avatar-wrapper">
+                    <input class="avatar-input" name="avatar" type="file" id="avatar" accept="image/png, image/jpeg, image/jpg">
+                    <label for="avatar"></label>
+                </div>
+            </div>
+            <form class="form">
+                <div class="form-wrapper">
+                    <ul class="inputList">
+                        {{> shared/ui/input-profile/input-profile label="Почта" placeholder="введите почту" name="email" type="email" value="test@gmail.com"}}
+                        {{> shared/ui/input-profile/input-profile label="Логин" placeholder="введите логин" name="login" type="text" value="javascripter"}}
+                        {{> shared/ui/input-profile/input-profile label="Имя" placeholder="введите имя" name="first_name" type="text" value="Сергей"}}
+                        {{> shared/ui/input-profile/input-profile label="Фамилия" placeholder="введите фамилию" name="second_name" type="text" value="Иванов"}}
+                        {{> shared/ui/input-profile/input-profile label="Телефон" placeholder="введите телефон" name="phone" type="tel" value="+7-931-273-87-99"}}
+                    </ul>
+                </div>
+                <div class="button-wrapper">
+                    {{> shared/ui/button/button type="submit" text="Сохранить"}}
+                </div>
+            </form>
+        </div>
+    </main>
+{{/ layouts/page}}

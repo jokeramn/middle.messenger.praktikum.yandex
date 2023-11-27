@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/src/partials/shared/ui/input-profile/input-profile.scss"/>
+
+<div class="wrapper-input">
+    <label class="label" for="{{id}}">{{label}}</label>
+    <input
+            class="input"
+            id="{{id}}"
+            name="{{name}}"
+            type="{{type}}"
+            placeholder="{{placeholder}}"
+            value="{{value}}"
+            {{#if disabled}}disabled{{/if}}
+    />
+</div>

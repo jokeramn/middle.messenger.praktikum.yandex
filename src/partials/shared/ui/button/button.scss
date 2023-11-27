@@ -1,0 +1,17 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  background: var(--button-primary-color);
+  color: var(--secondary-color);
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 13px;
+}

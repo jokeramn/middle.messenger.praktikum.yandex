@@ -1,0 +1,12 @@
+{{#> layouts/page title="Error"}}
+    <link rel="stylesheet" href="/src/pages/errors/index.scss"/>
+    <main class="error-page">
+        <div class="container">
+            {{> shared/ui/error-code/error-code code="404"}}
+            {{> shared/ui/error-text/error-text text="Не туда попали"}}
+            <div class="wrapper-link">
+                {{> shared/ui/link/link href="#" text="Назад к чатам"}}
+            </div>
+        </div>
+    </main>
+{{/layouts/page}}

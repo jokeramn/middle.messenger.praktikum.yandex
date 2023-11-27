@@ -1,0 +1,25 @@
+input {
+  all: unset;
+}
+
+.wrapper-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--input-secondary-color);
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+}
+
+.input {
+  color: var(--input-color);
+  text-align: right;
+  padding-bottom: 7px;
+}
